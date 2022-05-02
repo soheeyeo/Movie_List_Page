@@ -170,6 +170,8 @@ footer {
   display: block;
   position: relative;
   padding: 38px 365px;
+  overflow: hidden;
+  line-height: 20px;
 }
 
 footer h2 {
@@ -183,5 +185,65 @@ footer dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  float: left;
+  font-size: 14px;
+  color: #4f4f4f;
+  padding-top: 36px;
+}
+
+footer dl dt {
+  margin-right: 4px;
+  font-weight: 700;
+}
+
+footer dl dt:nth-child(1) {
+  margin-right: 20px;
+}
+
+footer dl dd {
+  margin-right: 20px;
+}
+
+footer .sns_list {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+  overflow: hidden;
+  font-size: 1px;
+  line-height: 0;
+  text-indent: -9999px;
+  right: 365px;
+  top: 54px;
+}
+
+footer .sns_list .twitter {
+  background: url(/images/css_sprites.png) no-repeat;
+  background-size: 152px 34px;
+  width: 24px;
+  height: 24px;
+  background-position: -55px -5px;
+}
+
+footer .sns_list .instagram {
+  background: url(/images/css_sprites.png) no-repeat;
+  background-size: 152px 34px;
+  width: 24px;
+  height: 24px;
+  background-position: -88px -5px;
+}
+
+footer .sns_list .facebook {
+  background: url(/images/css_sprites.png) no-repeat;
+  background-size: 152px 34px;
+  width: 24px;
+  height: 24px;
+  background-position: -123px -5px;
+}
+
+footer .copyright {
+  float: right;
+  margin-top: 36px;
 }
 /*# sourceMappingURL=style.css.map */

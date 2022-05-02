@@ -3,6 +3,8 @@ footer {
     display: block;
     position: relative;
     padding: 38px 365px;
+    overflow: hidden;
+    line-height: 20px;
     h2 {
         font-size: $font-h2;
         font-weight: $bold;
@@ -11,5 +13,53 @@ footer {
     }
     dl {
         display: flex;
+        float: left;
+        font-size: $font-a;
+        color: $footer-color;
+        padding-top: 36px;
+        
+        dt {
+            margin-right: 4px;           
+            font-weight: $bold;
+            &:nth-child(1) {
+                margin-right: 20px;
+            }
+        }
+        dd {
+            margin-right: 20px;
+        }
+        
+    }
+    .sns_list {
+        position: absolute;
+        display: flex;
+        gap: 21px;
+        overflow: hidden;
+        font-size: 1px;
+        line-height: 0;
+        text-indent: -9999px;
+        right: 365px;
+        top: 54px;
+        
+
+        .twitter {
+            @include sprite_sns;
+            background-position: -55px -5px;
+        }
+        .instagram {
+            @include sprite_sns;
+            background-position: -88px -5px;
+        }
+
+        .facebook {
+            @include sprite_sns;
+            background-position: -123px -5px;
+        }
+    }
+
+    .copyright {
+        float: right;
+        margin-top: 36px;
+    
     }
 }

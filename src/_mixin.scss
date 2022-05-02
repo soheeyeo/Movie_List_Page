@@ -20,3 +20,10 @@
     background: url(/images/css_sprites.png) no-repeat;
     background-size: 152px 34px;
 }
+
+@mixin sprite_sns {
+    background: url(/images/css_sprites.png) no-repeat;
+    background-size: 152px 34px;
+    width: 24px;
+    height: 24px;
+}
