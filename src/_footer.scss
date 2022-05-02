@@ -1,0 +1,15 @@
+footer {
+    background-color: $bg-color;
+    display: block;
+    position: relative;
+    padding: 38px 365px;
+    h2 {
+        font-size: $font-h2;
+        font-weight: $bold;
+        padding: 15px 0 42px;
+        border-bottom: 1px solid $border-color;
+    }
+    dl {
+        display: flex;
+    }
+}

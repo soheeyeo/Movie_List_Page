@@ -1,0 +1,135 @@
+.wrapper {
+    padding: 31px 28px;
+    margin: 144px auto;
+    width: 1060px;
+    background-color: $bg-color;
+    @include border_container;
+    text-align: center;
+
+    h1 {
+        font-size: $font-h1;
+        font-weight: $bold;
+        margin-top: 10px;
+
+        &::after {
+            @include after_line;
+            width: 650px;
+            height: 2px;
+            background-color: $border-color;
+            margin-top: 37px;
+        }
+    }
+
+    .navbar {
+        padding: 28px 312px;
+        display: flex;
+        justify-content: space-between;
+
+        .on {
+            font-weight: $black;
+        }
+    }
+
+    .movie_list {
+        @include border_container;
+        background-color: $white-color;
+        padding: 26px 27px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 23px;
+
+        &_item {
+            @include border_list;
+            width: 220px;
+
+            img {
+                width: 180px;
+                height: 250px;
+                margin-top: 19px;
+                @include border_list;
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            .btn {
+                width: 100%;
+                background-color: $bg-color;
+                border-top: 1px solid $border-color;
+                border-radius: 0 0 10px 10px;
+                padding: 9px 27px 12px;
+                font-size: $font-a;
+                font-weight: $bold;
+                position: relative;
+                line-height: 20px;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background-color: $border-color;
+                    width: 1px;
+                    height: 41px;
+                    left: 107px;
+                    top: 0;
+                }
+
+                .trailer {
+                    padding-left: 68px;
+                    position: relative;
+
+                    &::before {
+                        @include sprite;
+                        background-position: -29px -5px;
+                        width: 16px;
+                        height: 16px;
+                        left: 50px;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contents {
+    padding: 0 20px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    .title {
+        font-weight: $black;
+        margin: 11px 0;
+    }
+
+    .sub_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .info {
+        font-size: $font-span;
+        color: $txt-color;
+        margin-bottom: 5px;
+
+        span {
+            margin-left: 5px;
+            color: $black-color;
+        }
+
+        .rank {
+            position: relative;
+            margin-left: 23px;
+
+            &::before {
+                @include sprite;
+                background-position: -5px -5px;
+                width: 14px;
+                height: 14px;
+                left: -18px;
+            }
+        }
+
+    }
+}

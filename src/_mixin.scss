@@ -1,0 +1,22 @@
+@mixin border_container {
+    border: 2px solid $border-color;
+    border-radius: 15px;
+}
+
+@mixin border_list {
+    border: 1px solid $border-color;
+    border-radius: 10px;
+}
+
+@mixin after_line {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+}
+
+@mixin sprite {
+    content: "";
+    position: absolute;
+    background: url(/images/css_sprites.png) no-repeat;
+    background-size: 152px 34px;
+}

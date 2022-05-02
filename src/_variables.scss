@@ -1,0 +1,23 @@
+//font size
+$font-h1: 24px;
+$font-h2: 22px;
+$font-span: 13px;
+$font-a: 14px;
+
+//font weight
+$bold: 700;
+$black: 900;
+$medium: 500;
+$regular: 400;
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+$base-font: 'Roboto', sans-serif;
+
+//color
+$bg-color: #f2f2f2;
+$border-color: #bdbdbd;
+$txt-color: #828282;
+$footer-color: #4f4f4f;
+$black-color: #000;
+$white-color: #fff;
